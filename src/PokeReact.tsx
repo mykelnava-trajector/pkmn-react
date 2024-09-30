@@ -43,7 +43,7 @@ const PokeReact = () => {
         {pokemon1Data && (
           <div className = "transparent-box">
             <p>Name: {pokemon1Data?.name}<br />
-              Image: <img src={pokemon1Data?.sprites.front_default} className="image" /><br />
+              <p>Image: <img src={pokemon1Data?.sprites.front_default} className="image" /></p>
               Health: {pokemon1Data?.stats.find((s) => s.stat.name === "hp")?.base_stat}<br />
               Damage: {pokemon1Data?.stats.find((s) => s.stat.name === "attack")?.base_stat}<br />
               Defense: {pokemon1Data?.stats.find((s) => s.stat.name === "defense")?.base_stat}<br />
@@ -57,7 +57,7 @@ const PokeReact = () => {
         {pokemon2Data && (
           <div className="transparent-box">
             <p>Name: {pokemon2Data?.name}<br />
-              Image: <img src={pokemon2Data?.sprites.front_default} className="image" /><br />
+              <p>Image: <img src={pokemon2Data?.sprites.front_default} className="image" /></p>
               Health: {pokemon2Data?.stats.find((s) => s.stat.name === "hp")?.base_stat}<br />
               Damage: {pokemon1Data?.stats.find((s) => s.stat.name === "attack")?.base_stat}<br />
               Defense: {pokemon1Data?.stats.find((s) => s.stat.name === "defense")?.base_stat}<br />
