@@ -51,9 +51,8 @@ const PokeReact = () => {
           </div>
         )}
       </div>
-      <input type="text" placeholder="Pokemon" className="choosepokemon" value={pokeName1} onChange={(e) => setPokeName1(e.target.value)} />
-      <PinkButton buttonClick={fetchYourPokemon} label="Select" />
-      
+      <input type="text" placeholder="Pokemon" className="choosepokemon" value={pokeName1} onChange={(e) => setPokeName1(e.target.value)} />  
+      <PinkButton buttonClick={fetchYourPokemon} label="Select" /> <br/>
       <div className="pokemon-info">
         {pokemon2Data && (
           <div className="transparent-box">
@@ -68,7 +67,7 @@ const PokeReact = () => {
       </div>
       <input type="text" placeholder="Pokemon" value={pokeName2} onChange={(e) => setPokeName2(e.target.value)} />
       <PinkButton buttonClick={fetchEnemyPokemon} label="Select" /><br/>
-      <PinkButton buttonClick={battleresults} label={"Fight!"} />
+      <PinkButton buttonClick={battleresults} label={"Fight!"} /> <br/>
       {hasFightResults && (
         <div className="transparent-box">
           <p>
