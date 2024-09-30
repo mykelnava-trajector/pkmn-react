@@ -6,7 +6,7 @@ const PinkButton = ({
     <button 
       style={{
         color: "pink",
-        fontSize: 24
+        fontSize: 15
       }}
       onClick={buttonClick}
     >
